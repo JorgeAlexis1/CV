@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jorge Alexis Ortega | BI Developer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-left">
+        <h2 class="logo">For You: My Page</h2>
+    </div>
+
+    <ul class="nav-center">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <a href="https://www.linkedin.com/in/jorge-ortega-5a013a27a" target="_blank">LinkedIn</a>
+        <a href="https://github.com/JorgeAlexis1" target="_blank">GitHub</a>
+
+        <a href="{{ url_for('static', filename='CV_JorgeOrtega.pdf') }}" 
+           download 
+           class="btn-nav">
+           CV 📄
+        </a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- HERO -->
+    <section id="home" class="hero reveal">
+        <img src="{{ url_for('static', filename='myself.jpeg') }}" class="profile-img">
+
+        <h1>Jorge Alexis Ortega</h1>
+        <h2>Software Development Engineer | Business Intelligence Developer</h2>
+
+        <p>Chihuahua, México | +52 614 396 1176</p>
+    </section>
+
+    <!-- SUMMARY -->
+    <section class="card reveal">
+        <h3>Professional Summary</h3>
+        <p>
+            Software Engineer and BI Developer with 3+ years of experience building data-driven
+            solutions and enterprise dashboards at AutoZone.
+        </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="card reveal">
+        <h3>About Me</h3>
+        <p>
+            Passionate about transforming data into actionable insights and building scalable BI solutions.
+            I enjoy optimizing processes and helping businesses make better decisions through data.
+        </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="card reveal">
+        <h3>Experience</h3>
+    
+        <div class="job">
+            <!-- EMPRESA -->
+            <h4>
+                <a href="https://btssc.autozone.com/" target="_blank">
+                    AutoZone BTSSC
+                </a>
+            </h4>
+    
+            <!-- ROLES -->
+            <p><strong>BI Programmer</strong> | Mar 2025 – Present</p>
+            <p><strong>Associate Programmer</strong> | Feb 2024 – Mar 2025</p>
+            <p><strong>IT Intern</strong> | Apr 2023 – Feb 2024</p>
+    
+            <!-- RESPONSABILIDADES -->
+            <h5 class="sub-title">Key Responsibilities</h5>
+            <ul>
+                <li>Design and implement scalable data models for reporting and analytics</li>
+                <li>Build and maintain ETL processes to ensure data accuracy and consistency</li>
+                <li>Analyze large datasets to identify trends and business opportunities</li>
+                <li>Collaborate with cross-functional teams to deliver data-driven solutions</li>
+                <li>Improve dashboard performance and reduce load times</li>
+                <li>Ensure data quality through validation and monitoring processes</li>
+                <li>Develop reusable reporting components and templates</li>
+                <li>Work with cloud data platforms such as BigQuery</li>
+                <li>Translate business requirements into technical data solutions</li>
+                <li>Monitor and troubleshoot data issues in production environments</li>
+                <li>Create documentation for data pipelines and reporting systems</li>
+                <li>Automate data extraction and transformation workflows</li>
+                <li>Optimize database structures for efficient querying</li>
+            </ul>
+    
+            <!-- MAPA -->
+            <div id="mapJob" class="map hidden">
+                <iframe 
+                    src="https://www.google.com/maps?q=28.6730525,-106.0793171&output=embed"
+                    width="100%" 
+                    height="300">
+                </iframe>
+            </div>
+    
+            <!-- BOTON ABAJO -->
+            <button onclick="toggleMap('mapJob')" class="btn-map">
+                View Location 📍
+            </button>
+        </div>
+    </section>
+
+    <section id="skills" class="card reveal">
+        <h3>Skills</h3>
+    
+        <div class="skills">
+    
+            <strong>Data & BI:</strong><br>
+            <span>SQL</span>
+            <span>Data Modeling</span>
+            <span>WebFOCUS</span>
+            <span>Looker</span>
+            <span>BigQuery</span>
+            <span>Excel</span>
+    
+            <br><br>
+    
+            <strong>Programming:</strong><br>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>C#</span>
+            <span>HTML</span>
+            <span>CSS</span>
+    
+            <br><br>
+    
+            <strong>Tools & Methodologies:</strong><br>
+            <span>Agile / Scrum</span>
+            <span>Jira</span>
+            <span>Web Development</span>
+    
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card reveal">
+        <h3>Projects</h3>
+
+        <div class="projects">
+            <div class="project-card">
+                <h4>KPI Dashboard</h4>
+                <p>Business metrics visualization</p>
+            </div>
+
+            <div class="project-card">
+                <h4>SQL Optimization</h4>
+                <p>Improved query performance</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="card reveal">
+        <h3>Education</h3>
+    
+        <p>
+            <strong>Bachelor’s Degree in Software Development and Management Engineering</strong><br>
+            <a href="https://www.utch.edu.mx/" target="_blank">
+                Universidad Tecnológica de Chihuahua (UTCH)
+            </a><br>
+            2021 – 2025
+        </p>
+    
+        <p style="margin-top:15px;">
+            <strong>Higher University Technician (TSU) in Information Technologies – Software Development</strong><br>
+            <a href="https://www.utch.edu.mx/" target="_blank">
+                Universidad Tecnológica de Chihuahua (UTCH)
+            </a><br>
+            2021 – 2023
+        </p>
+    
+        <!-- MAPA -->
+        <div id="mapSchool" class="map hidden">
+            <iframe 
+                src="https://www.google.com/maps?q=28.6426239,-106.1474151&output=embed"
+                width="100%" 
+                height="300">
+            </iframe>
+        </div>
+    
+        <!-- BOTON ABAJO -->
+        <button onclick="toggleMap('mapSchool')" class="btn-map">
+            View Location 📍
+        </button>
+    </section>
+
+<!-- CONTACT -->
+<section class="card reveal">
+    <h3>Contact</h3>
+
+    <p>
+        Email: 
+        <a href="mailto:ortegafierrojorgealexis@gmail.com">
+            ortegafierrojorgealexis@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Or open in Gmail: 
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ortegafierrojorgealexis@gmail.com" target="_blank">
+            Send Email
+        </a>
+    </p>
+
+    <p>Phone: +52 614 396 1176</p>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Jorge Alexis Ortega</p>
+    <p>Built with Flask</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function toggleMap(id) {
+    var map = document.getElementById(id);
+    map.classList.toggle("hidden");
+}
+
+/* SCROLL ANIMATION */
+function revealOnScroll() {
+    const elements = document.querySelectorAll(".reveal");
+
+    elements.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+}
+
+/* NAVBAR SCROLL */
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function() {
+    let currentScroll = window.pageYOffset;
+    const navbar = document.querySelector(".navbar");
+
+    if (currentScroll > lastScrollTop && currentScroll > 80) {
+        navbar.classList.add("hidden-nav");
+    } else {
+        navbar.classList.remove("hidden-nav");
+    }
+
+    if (currentScroll > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+    lastScrollTop = currentScroll;
+});
+
+window.addEventListener("scroll", revealOnScroll);
+</script>
+
+</body>
+</html>
